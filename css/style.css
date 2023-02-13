@@ -51,7 +51,7 @@ html{
 
 body{
   background-color: var(--bg-main);
-  color: var(--bg-footer);
+  font-family: 'Open sans', sans-serif;
 }
 
 header{
@@ -66,5 +66,24 @@ header{
 }
 
 main{
-  height: calc(100vh - 80px);
+  padding-top: 80px;
+}
+
+#hero ,#free{
+  background-color: var(--bg-header);
+}
+
+footer{
+  background-color: var(--bg-footer);
+  color: var(--bg-main);
+}
+
+ul{
+  list-style: none;
+  text-decoration: none;
+}
+
+#list a{
+  color: var(--bg-main);
+  text-decoration: none;
 }
