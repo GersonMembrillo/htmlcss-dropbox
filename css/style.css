@@ -102,6 +102,9 @@ body{
 .button-white{
   background-color: var(--bg-main);
   color: var(--bg-footer);
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid var(--bg-footer)
 }
 
 .button-border{
@@ -168,6 +171,11 @@ h1{font-size: 5em;}
   color: var(--bg-footer);
 }
 
+.jumbo{
+  position: absolute;
+  width: 800px;
+}
+
 /* plans */
 
 .plan-option li{
@@ -214,13 +222,99 @@ h1{font-size: 5em;}
   color: var(--bg-button);
 }
 
+/* partner */
+
+.left-partner{
+  width: 60%;
+}
+.right-partner{
+  width: 40%;
+  padding: 50px;
+}
+
+/* features */
+.card{
+  width: calc(100% / 3);
+  padding: 20px;
+}
+
 /* clients + logos */
 
 #free h2{
   color: var(--bg-square2);
 }
 
-/* footer */
+.big-block{
+  width: calc(100% / 3);
+  height: calc(100vw / 3);
+}
+
+.small-block{
+  width: calc(100% / 2);
+  height: calc(100% / 2);
+    display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.small-block img{
+  width: 50%;
+  filter: invert(99%) sepia(0%) saturate(610%) hue-rotate(193deg) brightness(114%) contrast(100%);
+}
+
+.main-block{
+  padding: 50px;
+}
+
+.main-block img{
+  width: 50%;
+}
+
+.first-logo{
+  background-color: var(--bg-square1);
+}
+.second-logo{
+  background-color: var(--bg-square2);
+}
+.third-logo{
+  background-color: var(--br-square3);
+}
+.fourth-logo{
+  background-color: var(--br-square4);
+}
+.fifth-logo{
+  background-color: var(--bg-square5);
+}
+.main-block{
+  background-color: var(--bg-big-square);
+}
+.sixth-logo{
+  background-color: var(--bg-square6);
+}
+.seventh-logo{
+  background-color: var(--bg-square7);
+}
+.eighth-logo{
+  background-color: var(--bg-square8);
+}
+
+/* Free Period */
+
+#free .button-white{
+  border: none
+}
+
+.free-period{
+  padding: 100px 0px;
+}
+
+/* faq */
+
+.faq-padding{
+  padding: 20px 0px;
+}
+
+/* FOOTER */
 
 footer{
   background-color: var(--bg-footer);
