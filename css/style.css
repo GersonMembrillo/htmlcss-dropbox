@@ -178,6 +178,10 @@ h1{font-size: 5em;}
 
 /* plans */
 
+.plan-padding{
+  padding: 10px 0px;
+}
+
 .plan-option li{
   margin: 10px 0px;
 }
@@ -204,6 +208,35 @@ h1{font-size: 5em;}
   text-align: center;
   border: 1px solid lightgray;
   border-bottom: none;
+  padding: 10px 0;
+}
+
+.plan-enterprise{
+  border: 1px solid lightgray;
+  width: 98%;
+  margin: 0 1%;
+}
+
+.plan-center{
+  text-align: center;
+  padding: 10px 0;
+}
+
+.plan-hr{
+  margin: 10px 0px;
+}
+
+
+.plan-left{
+width: 70%;
+}
+
+.plan-right{
+  width: 30%;
+}
+
+.flex-ent-down{
+  padding: 30px 0 30px 30px;
 }
 
 .plan-bottom {
@@ -333,4 +366,19 @@ ul{
 
 #language{
   color: var(--color-footer-end);
+}
+
+.bar-footer {
+  width: 100px;
+  height: 1px;
+  background-color: lightgray;
+  position: left;
+}
+
+#language .fa-solid.fa-caret-up{
+  color: var(--color-footer-end);
+}
+
+footer ul li{
+  padding-top: 10px;
 }
