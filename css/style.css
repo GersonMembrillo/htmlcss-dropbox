@@ -48,6 +48,10 @@ html{
   justify-content: space-between;
 }
 
+.space-center{
+  justify-content: center;
+}
+
 .align-content{
   align-content: center;
 }
@@ -60,22 +64,23 @@ html{
   align-content: flex-start;
 }
 
+.gap{gap}
+
 .align{
     align-items: center;
     align-content: center;
 }
 
-
 .container{
   max-width: 1200px;
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 10px;
 }
 
 .container-small{
   max-width: 1000px;
   margin: 0 auto;
-    padding: 10px 0;
+    padding: 10px;
 }
 
 body{
@@ -106,7 +111,7 @@ img{
   width: 100%;
 }
 
-/* header */
+/* HEADER */
 
 header{
   position: fixed;
@@ -119,17 +124,19 @@ header{
   border-bottom: 2px solid lightgray;
 }
 
-nav{
-}
-.nav-left, .nav-right{
-  padding: 0 20px;
+.margin-nav{
+  margin-top: 20px;
 }
 
 .img-nav{
   width: 150px;
 }
 
-/* main */
+nav li{
+  padding: 0 15px;
+}
+
+/* MAIN */
 
 main{
   padding-top: 80px;
@@ -137,6 +144,7 @@ main{
 
 h1{font-size: 5em;}
 
+/* hero */
 #hero ,#free{
   background-color: var(--bg-header);
 }
@@ -152,12 +160,61 @@ h1{font-size: 5em;}
 }
 
 .p-top{
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
-.jumbo{
-
+.arrow{
+  font-size: 3em;
+  color: var(--bg-footer);
 }
+
+/* plans */
+
+.plan-option li{
+  margin: 10px 0px;
+}
+
+.options{
+  padding: 30px 0px;
+}
+
+.bar{
+  width: 40px;
+  height: 1px;
+  background-color: lightgray;
+  position: left;
+}
+
+.plan-option{
+  align-items: stretch;
+  width: calc(90% / 3);
+  padding: 20px;
+  border: 1px solid lightgray;
+}
+.plan-option-title{
+  width: calc(90% / 3);
+  text-align: center;
+  border: 1px solid lightgray;
+  border-bottom: none;
+}
+
+.plan-bottom {
+  padding-bottom: 30px;
+}
+
+.plan-bottom-few{
+  padding-bottom: 10px
+}
+
+.plan-top{
+  padding-top: 30px;
+}
+
+.fa-solid.fa-check {
+  color: var(--bg-button);
+}
+
+/* clients + logos */
 
 #free h2{
   color: var(--bg-square2);

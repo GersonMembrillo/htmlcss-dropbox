@@ -23,18 +23,21 @@
 	<body>
 		<!-- header fixed -->
 		<header>
-			<nav class="d-flex space-between align-center">
-				<div class="d-flex align">
+			<nav class="d-flex space-between">
+				<div class="d-flex align-center margin-nav">
 					<div><img class="img-nav" src="./img/logo-small.png" alt="DropboxLogo" /></div>
-
-					<div class="nav-left">Perchè Dropbox</div>
-					<div class="nav-left">Funzioni</div>
-					<div class="nav-left">Piani e Prezzi</div>
+					<ul class="d-flex">
+						<li>Perchè Dropbox</li>
+						<li>Funzioni</li>
+						<li>Piani e Prezzi</li>
+					</ul>
 				</div>
-				<div class="d-flex align">
-					<div class="nav-right">Supporto</div>
-					<div class="nav-right">Contatta l'ufficio vendite</div>
-					<div class="nav-right">Accedi</div>
+				<div class="d-flex align-center margin-nav">
+					<ul class="d-flex">
+						<li>Supporto</li>
+						<li>Contatta l'ufficio vendite</li>
+						<li>Accedi</li>
+					</ul>
 					<div><a href="" class="button">Inizia</a></div>
 				</div>
 			</nav>
@@ -51,7 +54,8 @@
 							intelligente e integrato per ottimizzare il flusso di lavoro esistente
 						</p>
 						<a href="" class="button">Inizia la tua prova gratuita</a>
-						<p class="p-top">Annulla in qualsiasi momento</p>
+						<p class="p-top p-bottom">Annulla in qualsiasi momento</p>
+						<a href=""><i class="arrow fa-solid fa-arrow-down"></i></a>
 					</div>
 					<div class="right debug">
 						<img class="jumbo" src="./img/jumbo.png" alt="" />
@@ -60,7 +64,131 @@
 			</section>
 			<!-- plans -->
 			<section id="plans " class="mb-100">
-				<div class="container-small debug"><h2>Trova il piano business che fa per te</h2></div>
+				<div class="container-small debug">
+					<h2>Trova il piano business che fa per te</h2>
+					<div class="options">
+						<input type="radio" name="plan" value="monthly" /> Fatturazione mensile
+						<input type="radio" name="plan" value="annual" /> Fatturazione annuale
+					</div>
+					<div class="plan d-flex debug container-small space-between">
+						<div class="plan-option-title"><i class="fa-solid fa-user"></i> Singolo</div>
+						<div class="plan-option-title"><i class="fa-solid fa-users"></i> Team</div>
+						<div class="plan-option-title"><i class="fa-solid fa-building"></i> Azienda</div>
+						<div class="plan-option">
+							<h3 class="plan-bottom">Professional</h3>
+							<p class="plan-bottom-few"><strong>12.00€</strong></p>
+							<p class="plan-bottom">/mese</p>
+							<ul class="fa-ul plan-bottom">
+								<li>
+									<span class="fa-li"><i class="fa-solid fa-user"></i></span>1 utente
+								</li>
+								<li>
+									<span class="fa-li"><i class="fa-solid fa-folder"></i></span>5 TB di spazio di
+									archiviazione
+								</li>
+								<li>
+									<span class="fa-li"><i class="fa-solid fa-share-nodes"></i></span>funzioni di
+									produttività premium e condivisione file semplice e sicura
+								</li>
+							</ul>
+							<a href="" class="button">Prova gratis per 30 giorni</a>
+							<p class="plan-top plan-bottom">oppure <a href="">acquista ora</a></p>
+							<div class="bar"></div>
+							<p class="plan-top"><strong>Punti salienti del piano</strong></p>
+							<ul class="fa-ul plan-top">
+								<li>
+									<span class="fa-li"><i class="fa-solid fa-check"></i></span>Invia fino a 100 GB
+									con Dropbox Transfert
+								</li>
+								<li>
+									<span class="fa-li"><i class="fa-solid fa-check"></i></span>Cartelle offline su
+									dispositivi mobili
+								</li>
+							</ul>
+						</div>
+						<div class="plan-option">
+							<h3 class="plan-bottom">Advanced</h3>
+							<p class="plan-bottom-few"><strong>18.00€</strong></p>
+							<p class="plan-bottom">/utente/mese</p>
+							<ul class="fa-ul plan-bottom">
+								<li>
+									<span class="fa-li"><i class="fa-solid fa-user"></i></span>3 o più utenti
+								</li>
+								<li>
+									<span class="fa-li"><i class="fa-solid fa-folder"></i></span>Tutto lo spazio di
+									cui ha bisogno il tuo team
+								</li>
+								<li>
+									<span class="fa-li"><i class="fa-solid fa-share-nodes"></i></span>funzioni di
+									produttività premium e condivisione file semplice e sicura
+								</li>
+							</ul>
+							<a href="" class="button">Prova gratis per 30 giorni</a>
+							<p class="plan-top plan-bottom">oppure <a href="">acquista ora</a></p>
+							<div class="bar"></div>
+							<p class="plan-top"><strong>Punti salienti del piano</strong></p>
+							<ul class="fa-ul plan-top">
+								<li>
+									<span class="fa-li"><i class="fa-solid fa-check"></i></span>Nessun limite di
+									spazio per i file
+								</li>
+								<li>
+									<span class="fa-li"><i class="fa-solid fa-check"></i></span>Cartelle offline su
+									dispositivi mobili
+								</li>
+								<li>
+									<span class="fa-li"><i class="fa-solid fa-check"></i></span>Risparmio del 50%
+									rispetto alle iscrizioni singole
+								</li>
+								<li>
+									<span class="fa-li"><i class="fa-solid fa-check"></i></span>Possibilità di
+									inserire nuovi membri del team
+								</li>
+								<li>
+									<span class="fa-li"><i class="fa-solid fa-check"></i></span>Gestione dei permessi
+									in base ai ruoli
+								</li>
+							</ul>
+						</div>
+						<div class="plan-option">
+							<h3 class="plan-bottom">Enterprice</h3>
+							<p class="plan-bottom-few"><strong>contattaci</strong></p>
+							<p class="plan-bottom">-</p>
+							<ul class="fa-ul plan-bottom">
+								<li>
+									<span class="fa-li"><i class="fa-solid fa-user"></i></span>10 o più utenti
+								</li>
+								<li>
+									<span class="fa-li"><i class="fa-solid fa-folder"></i></span>Soluzioni
+									personalizzabili per la tua azienda
+								</li>
+								<li>
+									<span class="fa-li"><i class="fa-solid fa-share-nodes"></i></span>Assitenza
+									personalizzata per aiutare gli amministratori in una gestione su larga scala
+								</li>
+							</ul>
+							<a href="" class="button">Prova gratis per 30 giorni</a>
+							<p class="plan-top plan-bottom">oppure <a href="">acquista ora</a></p>
+							<div class="bar"></div>
+							<p class="plan-top"><strong>Punti salienti del piano</strong></p>
+							<ul class="fa-ul plan-top">
+								<li>
+									<span class="fa-li"><i class="fa-solid fa-check"></i></span>Cartelle offline su
+									dispositivi mobili
+								</li>
+								<li>
+									<span class="fa-li"><i class="fa-solid fa-check"></i></span>Servizio assistenza
+									24/h
+								</li>
+								<li>
+									<span class="fa-li"><i class="fa-solid fa-check"></i></span>Possibilità di
+									personalizzazione totale
+								</li>
+							</ul>
+						</div>
+						<div></div>
+					</div>
+				</div>
 			</section>
 			<!-- partner -->
 			<section id="partner" class="mb-100">
