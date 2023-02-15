@@ -97,14 +97,23 @@ body{
   color: var(--bg-main);
   text-decoration: none;
   padding: 10px 20px;
+  transition: background-color 0.3s;
 }
+
+.button:hover
+{background-color: rgb(75, 123, 245);}
 
 .button-white{
   background-color: var(--bg-main);
   color: var(--bg-footer);
   text-decoration: none;
   padding: 10px 20px;
-  border: 1px solid var(--bg-footer)
+  border: 1px solid var(--bg-footer);
+  transition: background-color 0.3s;
+}
+
+.button-white:hover{
+  background-color: lightgray;
 }
 
 .button-border{
@@ -127,16 +136,26 @@ header{
   border-bottom: 2px solid lightgray;
 }
 
-.margin-nav{
-  margin-top: 20px;
+header a{
+  text-decoration: none;
+  color: var(--bg-footer);
 }
+
+/* .margin-nav{
+  margin-top: 20px;
+} */
 
 .img-nav{
   width: 150px;
 }
 
 nav li{
-  padding: 0 15px;
+  padding: 28px 20px;
+  transition: background-color 0.3s;
+}
+
+nav li:hover{
+  background-color: lightgray;
 }
 
 /* MAIN */
@@ -200,9 +219,10 @@ h1{font-size: 5em;}
 .plan-option{
   align-items: stretch;
   width: calc(90% / 3);
-  padding: 20px;
+  padding: 25px;
   border: 1px solid lightgray;
 }
+
 .plan-option-title{
   width: calc(90% / 3);
   text-align: center;
@@ -214,8 +234,15 @@ h1{font-size: 5em;}
 .plan-enterprise{
   border: 1px solid lightgray;
   width: 98%;
-  margin: 0 1%;
+  margin: 30px 1% 0;
 }
+
+.plan-option ul{
+  margin: 25px;
+    padding: 0;
+}
+
+
 
 .plan-center{
   text-align: center;
@@ -269,6 +296,11 @@ width: 70%;
 .card{
   width: calc(100% / 3);
   padding: 20px;
+  transition: box-shadow .3s;
+}
+
+.card:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 /* clients + logos */
@@ -288,6 +320,11 @@ width: 70%;
     display: flex;
       justify-content: center;
       align-items: center;
+      transition: box-shadow .3s;
+}
+
+.small-block:hover , .main-block:hover{
+  box-shadow: inset 0 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
 .small-block img{
@@ -297,6 +334,7 @@ width: 70%;
 
 .main-block{
   padding: 50px;
+  transition: box-shadow .3s;
 }
 
 .main-block img{
@@ -321,6 +359,11 @@ width: 70%;
 .main-block{
   background-color: var(--bg-big-square);
 }
+
+.overflow{
+  overflow: scroll;
+}
+
 .sixth-logo{
   background-color: var(--bg-square6);
 }
@@ -347,6 +390,13 @@ width: 70%;
   padding: 20px 0px;
 }
 
+.hide{
+  display: none;
+}
+
+.appear:hover .hide{
+  display: block;
+}
 /* FOOTER */
 
 footer{
@@ -375,8 +425,9 @@ ul{
   position: left;
 }
 
-#language .fa-solid.fa-caret-up{
+#language a{
   color: var(--color-footer-end);
+  text-decoration: none;
 }
 
 footer ul li{

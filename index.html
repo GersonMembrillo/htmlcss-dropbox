@@ -27,16 +27,16 @@
 				<div class="d-flex align-center margin-nav">
 					<div><img class="img-nav" src="./img/logo-small.png" alt="DropboxLogo" /></div>
 					<ul class="d-flex">
-						<li>Perchè Dropbox</li>
-						<li>Funzioni</li>
-						<li>Piani e Prezzi</li>
+						<a href=""><li>Perchè Dropbox</li></a>
+						<a href="#features"><li>Funzioni</li></a>
+						<a href="#plans"><li>Piani e Prezzi</li></a>
 					</ul>
 				</div>
 				<div class="d-flex align-center margin-nav">
 					<ul class="d-flex">
-						<li>Supporto</li>
-						<li>Contatta l'ufficio vendite</li>
-						<li>Accedi</li>
+						<a href="#faq"><li>Supporto</li></a>
+						<a href="#call"><li>Contatta l'ufficio vendite</li></a>
+						<a href=""><li>Accedi</li></a>
 					</ul>
 					<div><a href="" class="button">Inizia</a></div>
 				</div>
@@ -55,7 +55,7 @@
 						</p>
 						<a href="" class="button">Inizia la tua prova gratuita</a>
 						<p class="p-top p-bottom">Annulla in qualsiasi momento</p>
-						<a href=""><i class="arrow fa-solid fa-arrow-down"></i></a>
+						<a href="#free"><i class="arrow fa-solid fa-arrow-down"></i></a>
 					</div>
 					<div class="right debug">
 						<img class="jumbo" src="./img/jumbo.png" alt="" />
@@ -63,12 +63,12 @@
 				</div>
 			</section>
 			<!-- plans -->
-			<section id="plans " class="mb-100">
+			<section id="plans" class="mb-100">
 				<div class="container-small debug">
 					<h2>Trova il piano business che fa per te</h2>
 					<div class="options">
-						<input type="radio" name="plan" value="monthly" /> Fatturazione mensile
-						<input type="radio" name="plan" value="annual" /> Fatturazione annuale
+						<input type="radio" name="plan-month" value="monthly" /> Fatturazione mensile
+						<input type="radio" name="plan-year" value="annual" /> Fatturazione annuale
 					</div>
 					<div class="plan d-flex debug container-small space-between">
 						<div class="plan-option-title"><i class="fa-solid fa-user"></i> Singolo</div>
@@ -187,26 +187,24 @@
 							</ul>
 						</div>
 					</div>
-					<div>
-						<div class="plan-enterprise">
-							<div class="plan-center">
-								<p><i class="fa-solid fa-building"></i> Team</p>
-								<hr class="plan-hr" />
+					<div id="call" class="plan-enterprise">
+						<div class="plan-center">
+							<p><i class="fa-solid fa-building"></i> Team</p>
+							<hr class="plan-hr" />
+						</div>
+						<div class="flex-ent-down d-flex space-between">
+							<div class="plan-left">
+								<h3 class="plan-bottom-few">Enterprisse</h3>
+								<p class="plan-bottom">
+									<strong>Contatta l'ufficio vendite per i prezzi</strong>
+								</p>
+								<p>
+									Soluzione personalizzate e supporto su misura per aiutare i professionisti IT
+									nella gestione su qualsiasi scala.
+								</p>
 							</div>
-							<div class="flex-ent-down d-flex space-between">
-								<div class="plan-left">
-									<h3 class="plan-bottom-few">Enterprisse</h3>
-									<p class="plan-bottom">
-										<strong>Contatta l'ufficio vendite per i prezzi</strong>
-									</p>
-									<p>
-										Soluzione personalizzate e supporto su misura per aiutare i professionisti IT
-										nella gestione su qualsiasi scala.
-									</p>
-								</div>
-								<div class="plan-right">
-									<a href="" class="button">Contatta l'ufficio vendite</a>
-								</div>
+							<div class="plan-right">
+								<a href="" class="button">Contatta l'ufficio vendite</a>
 							</div>
 						</div>
 					</div>
@@ -234,9 +232,10 @@
 			<!-- features -->
 			<section id="features" class="mb-100">
 				<div class="container-small debug">
-					<h2>Esegui più operazioni con Dropbox Business</h2>
+					<h2 class="plan-bottom-few">Esegui più operazioni con Dropbox Business</h2>
 					<div class="d-flex space between wrap debug">
 						<div class="debug card">
+							<div class="card-shadow"></div>
 							<img src="./img/business-feature-switching-tools.png" alt="" />
 							<h3>Passa da uno strumento all'altro</h3>
 							<p>
@@ -317,16 +316,18 @@
 							<img src="./img/topps.svg" alt="" />
 						</div>
 					</div>
-					<div class="big-block main-block">
-						<img class="plan-bottom" src="./img/designit.svg" alt="" />
-						<div class="bar"></div>
-						<p class="plan-top plan-bottom">
-							"I membri del nostro team lavorano constantemente in Paesi, flussi orari e uffici
-							diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile
-							quanto Dropbox e Dropbox Paper. Ora molte soluzioni sono compatibili con queste
-							esigenze, ma nessuna è facile quanto Dropbox Paper.
-						</p>
-						<p>Morten Thomsen, Global IT Lead</p>
+					<div class="big-block main-block overflow">
+						<div>
+							<img class="plan-bottom" src="./img/designit.svg" alt="" />
+							<div class="bar"></div>
+							<p class="plan-top plan-bottom">
+								"I membri del nostro team lavorano constantemente in Paesi, flussi orari e uffici
+								diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è
+								facile quanto Dropbox e Dropbox Paper. Ora molte soluzioni sono compatibili con
+								queste esigenze, ma nessuna è facile quanto Dropbox Paper.
+							</p>
+							<p>Morten Thomsen, Global IT Lead</p>
+						</div>
 					</div>
 					<div class="big-block d-flex">
 						<div class="small-block fifth-logo">
@@ -361,15 +362,20 @@
 				<div class="container-small debug">
 					<h2 class="plan-bottom">Domande frequenti</h2>
 					<hr />
-					<div class="faq-padding d-flex space-between">
+					<div class="appear faq-padding d-flex space-between">
 						<div>
 							<p>
 								Qual'è la differenza tra Dropbox Bussiness Standard e Dropboss Bussiness Advanced?
 							</p>
 						</div>
 						<div>
-							<a href=""><i class="fa-solid fa-angle-down"></i></a>
+							<i class="fa-solid fa-angle-down"></i>
 						</div>
+					</div>
+					<div class="hide plan-bottom">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolore, minus vel
+						non officia quae quis sapiente optio, ipsam explicabo temporibus, totam eveniet omnis
+						nisi corrupti laborum repudiandae neque. Explicabo.
 					</div>
 					<hr />
 					<div class="faq-padding d-flex space-between">
@@ -402,48 +408,48 @@
 				<ul>
 					<li><h3>Dropbox</h3></li>
 					<li><a href="">Applicazione desktop</a></li>
-					<li><a href="">Perchè Dropbox</a></li>
-					<li><a href="">Piani</a></li>
+					<li><a href="#hero">Perchè Dropbox</a></li>
+					<li><a href="#plans">Piani</a></li>
 					<li><a href="">Sicurezza</a></li>
-					<li><a href="">Funzioni</a></li>
+					<li><a href="#features">Funzioni</a></li>
 				</ul>
 				<ul>
 					<li><h3>Dropbox</h3></li>
 					<li><a href="">Applicazione desktop</a></li>
-					<li><a href="">Perchè Dropbox</a></li>
-					<li><a href="">Piani</a></li>
+					<li><a href="#hero">Perchè Dropbox</a></li>
+					<li><a href="#plans">Piani</a></li>
 					<li><a href="">Sicurezza</a></li>
-					<li><a href="">Funzioni</a></li>
+					<li><a href="#features">Funzioni</a></li>
 				</ul>
 				<ul>
 					<li><h3>Dropbox</h3></li>
 					<li><a href="">Applicazione desktop</a></li>
-					<li><a href="">Perchè Dropbox</a></li>
-					<li><a href="">Piani</a></li>
+					<li><a href="#hero">Perchè Dropbox</a></li>
+					<li><a href="#plans">Piani</a></li>
 					<li><a href="">Sicurezza</a></li>
-					<li><a href="">Funzioni</a></li>
+					<li><a href="#features">Funzioni</a></li>
 				</ul>
 				<ul>
 					<li><h3>Dropbox</h3></li>
 					<li><a href="">Applicazione desktop</a></li>
-					<li><a href="">Perchè Dropbox</a></li>
-					<li><a href="">Piani</a></li>
+					<li><a href="#hero">Perchè Dropbox</a></li>
+					<li><a href="#plans">Piani</a></li>
 					<li><a href="">Sicurezza</a></li>
-					<li><a href="">Funzioni</a></li>
+					<li><a href="#features">Funzioni</a></li>
 				</ul>
 				<ul>
 					<li><h3>Dropbox</h3></li>
 					<li><a href="">Applicazione desktop</a></li>
-					<li><a href="">Perchè Dropbox</a></li>
-					<li><a href="">Piani</a></li>
+					<li><a href="#hero">Perchè Dropbox</a></li>
+					<li><a href="#plans">Piani</a></li>
 					<li><a href="">Sicurezza</a></li>
-					<li><a href="">Funzioni</a></li>
+					<li><a href="#features">Funzioni</a></li>
 				</ul>
 			</div>
 			<div id="language" class="container debug">
 				<div class="bar-footer"></div>
-				<i class="fa-solid fa-globe plan-bottom plan-top"></i> Italiano
-				<a href=""><i class="fa-solid fa-caret-up"></i></a>
+				<i class="fa-solid fa-globe plan-bottom pla"></i>
+				<a href="">Italiano <i class="fa-solid fa-caret-up"></i></a>
 			</div>
 		</footer>
 	</body>
