@@ -390,13 +390,19 @@ width: 70%;
   padding: 20px 0px;
 }
 
-.hide{
+.appear + .hide{
   display: none;
 }
 
-.appear:hover .hide{
+.appear:hover + .hide{
   display: block;
 }
+
+.appear{
+  text-decoration: none;
+  color: var(--bg-footer);
+}
+
 /* FOOTER */
 
 footer{
